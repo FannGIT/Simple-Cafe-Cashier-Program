@@ -29,9 +29,8 @@ void tampilkanMenu() {
     cout << "=============================================\n";
     cout << "               MENU UNIBA CAFFE           \n";
     cout << "=============================================\n";
-
-    // ------------ Menu Minuman
-    cout << left << setw(5) << "No" << setw(20) << "Menu Minuman" << "Harga\n";
+    
+    cout << left << setw(5) << "No" << setw(20) << "Menu" << "Harga\n";
     cout << "---------------------------------------------\n";
     cout << left << setw(5) << "1" << setw(20) << "Americano" << "Rp10.000\n";
     cout << left << setw(5) << "2" << setw(20) << "Cappuccino" << "Rp15.000\n";
@@ -150,7 +149,7 @@ int main() {
     cout << "=============================================\n";
     cout << "Sedang Menampilkan Menu..." << endl;
     cout << "-----------------------------\n" << endl;
-    std::this_thread::sleep_for(std::chrono::seconds(4)); // Jeda selama 3 detik
+    std::this_thread::sleep_for(std::chrono::seconds(4));
 // ------- Menu Section (Bagian Menu)
     tampilkanMenu();
     do {
@@ -293,4 +292,5 @@ int main() {
     cetakNota(nota, nama, infoPesanan, modePesan, totalKeseluruhan, diskon, totalSetelahDiskon, uang, kembali, metode);
 
     return 0;
+
 }
