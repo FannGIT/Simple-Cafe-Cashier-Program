@@ -1,3 +1,4 @@
+// --- [LIBRARY]
 #include <iostream>
 #include <string>
 #include <iomanip>
@@ -6,6 +7,7 @@
 #include <chrono>
 using namespace std;
 
+// --- [Struct Data]
 void tampilkanMenu();
 string metodePembayaran();
 double pilihMenu(
@@ -23,8 +25,7 @@ void cetakNota(
     double kembali, 
     const string &metode);
 
-// ======= Function
-// ======= Menampilkan Menu
+// --- [Function] Menampilkan Menu
 void tampilkanMenu() {
     cout << "=============================================\n";
     cout << "               MENU UNIBA CAFFE           \n";
@@ -47,7 +48,7 @@ void tampilkanMenu() {
     cout << "=============================================\n";
 }
 
-// ======= Validasi Menu
+// --- [Function] Validasi Menu
 double pilihMenu(int kode, string &namaMenu) {
     switch (kode) {
         case 1:
@@ -80,7 +81,7 @@ double pilihMenu(int kode, string &namaMenu) {
     }
 }
 
-// ======= Payment Function
+// --- [Function] Payment
 string metodePembayaran() {
     string metode;
     do {
@@ -95,7 +96,7 @@ string metodePembayaran() {
     return metode;
 }
 
-// ======= Struct Function
+// --- [Function] Struct Print
 void cetakNota(const string &nota, 
     const string &nama, 
     string infoPesanan, 
@@ -138,7 +139,7 @@ void cetakNota(const string &nota,
     cout << "Terima kasih telah berbelanja di Uniba Caffe!" << endl;
 }
 
-// ======= Main Function (Utama)
+// --- [Function] Utama
 int main() {
     string ulang, nama, nota = "", namaMenu, metode, dineOption, infoPesanan, modePesan;
     int jumlah, nmr = 1, pilihan;
