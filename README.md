@@ -1,3 +1,4 @@
+![Fann-Banner](./assets/banner.png)
 <div align="center">
 
 # ☕ UNIBA CAFFE  
