@@ -19,7 +19,6 @@ Program ini dirancang untuk mensimulasikan sistem kasir cafe mulai dari **pemili
 Project ini cocok sebagai:
 - Tugas kuliah
 - Latihan algoritma & logika program
-- Portfolio GitHub
 
 ---
 
